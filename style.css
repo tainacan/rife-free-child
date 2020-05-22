@@ -20,6 +20,19 @@ Version:        0.1.0
 .table-container .table-wrapper table.tainacan-table tbody tr td {
     height: 40px;
 }
+.theme-items-list {
+	--tainacan-yellow1: #fdf6d7 !important;
+	--tainacan-input-color: #454647 !important;
+	--tainacan-input-border-color: #f2f2f2 !important;
+	--tainacan-input-background-color: #fbfbfb !important;
+	--tainacan-item-background-color: #fbfbfb !important;
+	--tainacan-item-hover-background-color: white !important;
+	--tainacan-item-heading-hover-background-color: #fcfcfc !important;
+	--tainacan-primary: #cddce9 !important;
+	--tainacan-secondary: #3957ff !important;
+	--tainacan-block-gray3: #adabab !important;
+	--tainacan-block-primary: #3957ff !important;
+}
 
 /* Gutenberg full block */
 .alignfull {
