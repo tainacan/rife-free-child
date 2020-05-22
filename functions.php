@@ -20,3 +20,11 @@ function rife_free_parent_theme_enqueue_styles() {
 	);
 
 }
+
+function rife_free_child_setup() {
+	/**
+	 * Display in gutenberg plugin the full width for image
+	 */
+	add_theme_support( 'align-wide' );
+}
+add_action( 'after_setup_theme', 'rife_free_child_setup' );

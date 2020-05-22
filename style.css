@@ -8,3 +8,15 @@ Template:       rife-free
 Version:        0.1.0
 */
 
+/* Tainacan items list */
+#filters-modal .modal-content {
+    box-sizing: border-box;
+}
+.tainacan-records-container .tainacan-record .metadata-title,
+.tainacan-masonry-container .tainacan-masonry-item .metadata-title,
+.tainacan-cards-container .tainacan-card .metadata-title {
+    min-height: auto;
+}
+.table-container .table-wrapper table.tainacan-table tbody tr td {
+    height: 40px;
+}
