@@ -7,19 +7,16 @@ Author URI:
 Template:       rife-free
 Version:        0.1.0
 */
+/* Sticky header logo behaviour */
+@media only screen and (max-width:1024px) {
+    .header-variant-one_line_centered.sticky-values .logo-container,
+    .header-horizontal .sticky-values .logo-container a.logo {
+        max-width: 100px;
+        transition: max-width 0.2s ease;
+    }
+}
 
 /* Tainacan items list */
-#filters-modal .modal-content {
-    box-sizing: border-box;
-}
-.tainacan-records-container .tainacan-record .metadata-title,
-.tainacan-masonry-container .tainacan-masonry-item .metadata-title,
-.tainacan-cards-container .tainacan-card .metadata-title {
-    min-height: auto;
-}
-.table-container .table-wrapper table.tainacan-table tbody tr td {
-    height: 40px;
-}
 .theme-items-list {
 	--tainacan-yellow1: #fdf6d7 !important;
 	--tainacan-input-color: #454647 !important;
@@ -33,6 +30,21 @@ Version:        0.1.0
 	--tainacan-block-gray3: #adabab !important;
 	--tainacan-block-primary: #3957ff !important;
 }
+#filters-modal .modal-content {
+    box-sizing: border-box;
+}
+.theme-items-list .tainacan-records-container .tainacan-record .metadata-title,
+.theme-items-list .tainacan-masonry-container .tainacan-masonry-item .metadata-title,
+.theme-items-list .tainacan-cards-container .tainacan-card .metadata-title {
+    min-height: auto !important;
+}
+.theme-items-list .table-container .table-wrapper table.tainacan-table tbody tr td {
+    height: 40px !important;
+}
+.theme-items-list .dropdown-menu div.dropdown-content .dropdown-item {
+    box-sizing: border-box;
+}
+
 
 /* Gutenberg full block */
 .alignfull {

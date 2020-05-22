@@ -21,10 +21,19 @@ function rife_free_parent_theme_enqueue_styles() {
 
 }
 
+/**
+ * Display in gutenberg plugin the full width for image
+ */
 function rife_free_child_setup() {
-	/**
-	 * Display in gutenberg plugin the full width for image
-	 */
 	add_theme_support( 'align-wide' );
 }
 add_action( 'after_setup_theme', 'rife_free_child_setup' );
+
+/**
+ * Enqueues JS scripts
+ */
+function rife_free_child_scripts() {
+	wp_register_script( 'rife-free-child-scripts', get_stylesheet_directory_uri() . '/scripts.js', []);
+	wp_enqueue_script( 'rife-free-child-scripts' );
+}
+add_action( 'wp_enqueue_scripts', 'rife_free_child_scripts' );  
