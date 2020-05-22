@@ -11,7 +11,7 @@ Version:        0.1.0
 /* Sticky header logo behaviour */
 .header-variant-one_line_centered.sticky-values .logo-container,
 .header-horizontal .sticky-values .logo-container a.logo {
-    max-width: 100px !important;
+    max-width: 125px !important;
     transition: max-width 0.2s ease;
 }
 
