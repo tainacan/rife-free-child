@@ -7,14 +7,14 @@ Author URI:
 Template:       rife-free
 Version:        0.1.0
 */
+
 /* Sticky header logo behaviour */
-@media only screen and (max-width:1024px) {
-    .header-variant-one_line_centered.sticky-values .logo-container,
-    .header-horizontal .sticky-values .logo-container a.logo {
-        max-width: 100px;
-        transition: max-width 0.2s ease;
-    }
+.header-variant-one_line_centered.sticky-values .logo-container,
+.header-horizontal .sticky-values .logo-container a.logo {
+    max-width: 100px !important;
+    transition: max-width 0.2s ease;
 }
+
 
 /* Tainacan items list */
 .theme-items-list {
@@ -26,9 +26,9 @@ Version:        0.1.0
 	--tainacan-item-hover-background-color: white !important;
 	--tainacan-item-heading-hover-background-color: #fcfcfc !important;
 	--tainacan-primary: #cddce9 !important;
-	--tainacan-secondary: #3957ff !important;
+	--tainacan-secondary: #004080 !important;
 	--tainacan-block-gray3: #adabab !important;
-	--tainacan-block-primary: #3957ff !important;
+	--tainacan-block-primary: #004080 !important;
 }
 #filters-modal .modal-content {
     box-sizing: border-box;
