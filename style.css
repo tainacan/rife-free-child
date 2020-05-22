@@ -20,3 +20,11 @@ Version:        0.1.0
 .table-container .table-wrapper table.tainacan-table tbody tr td {
     height: 40px;
 }
+
+/* Gutenberg full block */
+.alignfull {
+    width: 100%;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%)/2));
+    margin-right: calc(-1 * ((100vw - 100%)/2));
+}
