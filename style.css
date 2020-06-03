@@ -77,3 +77,18 @@ Version:        0.1.0
     -webkit-box-shadow: 0px 5px 32px -15px rgba(0,0,0,0.4);
     box-shadow: 0px 5px 32px -15px rgba(0,0,0,0.4);
 }
+
+/* Grids block need better responsiviness */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .grids-is-advanced {
+        width: 100%;
+        margin: 0;
+    }
+    .grids-is-advanced .grids-s-w_i {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grids-is-advanced .grids-s-w_i>div {
+        flex-basis: 31%;
+    }
+}
