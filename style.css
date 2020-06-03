@@ -90,5 +90,6 @@ Version:        0.1.0
     }
     .grids-is-advanced .grids-s-w_i>div {
         flex-basis: 31%;
+        height: auto !important;
     }
 }
