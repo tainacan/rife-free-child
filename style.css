@@ -71,3 +71,9 @@ Version:        0.1.0
 .wp-block-kioken-imagebox__inner {
     padding: 0.5rem;
 }
+
+/* Image box shadow is too much on the parent theme */
+.wp-block-kioken-imagebox.has-box-shadow {
+    -webkit-box-shadow: 0px 5px 32px -15px rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 32px -15px rgba(0,0,0,0.4);
+}
