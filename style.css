@@ -53,7 +53,7 @@ Version:        0.1.0
     margin-left: calc(-1 * ((100vw - 100%)/2));
     margin-right: calc(-1 * ((100vw - 100%)/2));
 }
-.alignwide {
+body:not(.site-layout-full) .alignwide {
     width: calc(100% + 120px);
     margin-left: -60px;
     margin-right: -60px;
@@ -80,10 +80,6 @@ Version:        0.1.0
 
 /* Grids block need better responsiviness */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .grids-is-advanced {
-        width: 100%;
-        margin: 0;
-    }
     .grids-is-advanced .grids-s-w_i {
         display: flex;
         flex-wrap: wrap;
