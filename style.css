@@ -58,3 +58,16 @@ Version:        0.1.0
     margin-left: -60px;
     margin-right: -60px;
 }
+
+/* Image blocks break word */
+.wp-block-kioken-imagebox h1,
+.wp-block-kioken-imagebox h2,
+.wp-block-kioken-imagebox h3,
+.wp-block-kioken-imagebox h4,
+.wp-block-kioken-imagebox h5,
+.wp-block-kioken-imagebox h6 {
+    word-wrap: break-word;
+}
+.wp-block-kioken-imagebox__inner {
+    padding: 0.5rem;
+}
