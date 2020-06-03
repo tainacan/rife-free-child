@@ -89,7 +89,7 @@ Version:        0.1.0
         flex-wrap: wrap;
     }
     .grids-is-advanced .grids-s-w_i>div {
-        flex-basis: 31%;
+        flex-basis: 30%;
         height: auto !important;
     }
 }
