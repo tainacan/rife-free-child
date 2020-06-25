@@ -34,28 +34,28 @@ else{
 		?>
 
 		<article id="content" class="clearfix"<?php apollo13framework_schema_args('creative'); ?>>
-			<div class="content-limiter">
-				<div id="col-mask">
 
-					<div id="post-<?php the_ID(); ?>" <?php
-					post_class( $add_class );
-					if( $sticky_one_page ){
-						echo ' data-a13-sticky-one-page-icon-global-color="' . esc_attr( $apollo13framework_a13->get_meta( '_content_sticky_one_page_bullet_color' ) ) . '"';
-						echo ' data-a13-sticky-one-page-icon-global-icon="' . esc_attr( $apollo13framework_a13->get_meta( '_content_sticky_one_page_bullet_icon' ) ) . '"';
-					}
-					?>>
-					<?php apollo13framework_title_bar( 'inside' ); ?>
-					<div class="real-content" <?php apollo13framework_schema_args('text'); ?>></div>
-						<?php tainacan_the_faceted_search([
-							'default_view_mode' => 'records',
-							'enabled_view_modes' => ['masonry', 'records', 'cards', 'table']
-						]); ?>
-					</div>
+			<div id="col-mask">
 
-					</div>
-					<?php get_sidebar(); ?>
+				<div id="post-<?php the_ID(); ?>" <?php
+				post_class( $add_class );
+				if( $sticky_one_page ){
+					echo ' data-a13-sticky-one-page-icon-global-color="' . esc_attr( $apollo13framework_a13->get_meta( '_content_sticky_one_page_bullet_color' ) ) . '"';
+					echo ' data-a13-sticky-one-page-icon-global-icon="' . esc_attr( $apollo13framework_a13->get_meta( '_content_sticky_one_page_bullet_icon' ) ) . '"';
+				}
+				?>>
+				<?php apollo13framework_title_bar( 'inside' ); ?>
+				<div class="real-content" <?php apollo13framework_schema_args('text'); ?>></div>
+					<?php tainacan_the_faceted_search([
+						'default_view_mode' => 'records',
+						'enabled_view_modes' => ['masonry', 'records', 'cards', 'table']
+					]); ?>
 				</div>
+
+				</div>
+				<?php get_sidebar(); ?>
 			</div>
+
 		</article>
 
 		<?php
