@@ -15,6 +15,12 @@ Version:        0.1.0
     transition: max-width 0.2s ease;
 }
 
+/* Page title with breadcrumb */
+.title-bar .overlay-color .in {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /* Tainacan items list */
 .theme-items-list {
