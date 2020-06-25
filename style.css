@@ -95,3 +95,79 @@ body:not(.site-layout-full) .alignwide {
         height: auto !important;
     }
 }
+
+/* Single item Page for Tainacan */
+.tainacan-content.single-item--document {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+.tainacan-content.single-item--document > iframe, 
+.tainacan-content.single-item--document > img.attachment-large {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+}
+.tainacan-content.single-item--document > audio {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .tainacan-content.single-item--document > iframe {
+        min-height: 600px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .tainacan-content.single-item--document > iframe {
+        min-height: 429px;
+    }
+}
+.tainacan-content.single-item--document .tainacan-embed-container {
+    width: 100%;
+}
+.tainacan-content.single-item--document .tainacan-embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.tainacan-content.single-item--attachments {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+.tainacan-content.single-item--attachments .single-item--attachments-file { 
+    max-width: 82px;
+    padding: 12px;
+    text-align: center;
+}
+.tainacan-content.single-item--attachments .single-item--attachments-file .single-item-file-name {
+    word-break: break-all;
+    line-height: 1;
+}
+.tainacan-content.single-item--metadata {
+    padding: 12px;
+    column-count: 2;
+}
+@media only screen and (max-width: 768px) {
+    .tainacan-content.single-item--metadata {
+        column-count: 1;
+    }
+}
+.tainacan-content.single-item--metadata .tainacan-metadata {
+    break-inside: avoid;
+}
+.tainacan-content.single-item--metadata .tainacan-metadata h3 {
+    margin-bottom: 0;
+    text-transform: none;
+    font-size: 1.35em;
+    line-height: 1.1;
+}
+.tainacan-content.single-item--metadata .tainacan-metadata p {
+    margin-block-start: 0.5em;
+}
+.tainacan-content.single-item--metadata .tainacan-metadata .multivalue-separator,
+.tainacan-content.single-item--metadata .tainacan-metadata .hierarchy-separator {
+    color: #777777;
+}
