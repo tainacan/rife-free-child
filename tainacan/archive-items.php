@@ -25,7 +25,7 @@ else{
 	if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'single' ) ){
 
 		the_post();
-		apollo13framework_title_bar();
+		apollo13framework_title_bar('outside', tainacan_get_the_collection_name());
 		$add_class       = 'content-box';
 		$sticky_one_page = $apollo13framework_a13->get_meta( '_content_sticky_one_page' ) === 'on';
 		if( $sticky_one_page ){
@@ -37,15 +37,15 @@ else{
 
 			<div id="col-mask">
 
-				<div id="post-<?php the_ID(); ?>" <?php
+				<div style="padding: 0;" id="post-<?php the_ID(); ?>" <?php
 				post_class( $add_class );
 				if( $sticky_one_page ){
 					echo ' data-a13-sticky-one-page-icon-global-color="' . esc_attr( $apollo13framework_a13->get_meta( '_content_sticky_one_page_bullet_color' ) ) . '"';
 					echo ' data-a13-sticky-one-page-icon-global-icon="' . esc_attr( $apollo13framework_a13->get_meta( '_content_sticky_one_page_bullet_icon' ) ) . '"';
 				}
 				?>>
-				<?php apollo13framework_title_bar( 'inside' ); ?>
-				<div class="real-content" <?php apollo13framework_schema_args('text'); ?>></div>
+				<?php apollo13framework_title_bar( 'inside', tainacan_get_the_collection_name() ); ?>
+				<div class="real-content" <?php apollo13framework_schema_args('text'); ?>>
 					<?php tainacan_the_faceted_search(); ?>
 				</div>
 
