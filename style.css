@@ -175,3 +175,31 @@ body:not(.site-layout-full) .alignwide {
 .tainacan-content.single-item--metadata .tainacan-metadata .hierarchy-separator {
     color: #777777;
 }
+
+#brave-contact-form {
+    position: fixed;
+    background: #ececec;
+    bottom: 16px;
+    right: 16px;
+    z-index: 9999999;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    box-shadow: 0px 3px 12px -9px #000;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+#brave-contact-form:hover {
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
+#brave-contact-form img {
+    padding: 7px;
+    max-width: 100%;
+    display: block;
+    width: 38px;
+    margin: 15px 12px;
+}

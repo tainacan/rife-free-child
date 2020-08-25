@@ -6,6 +6,7 @@
  *
  * @package rife-free-child
  */
+include_once(ABSPATH .'wp-admin/includes/plugin.php');
 
 add_action( 'wp_enqueue_scripts', 'rife_free_parent_theme_enqueue_styles' );
 
@@ -37,3 +38,14 @@ function rife_free_child_scripts() {
 	wp_enqueue_script( 'rife-free-child-scripts' );
 }
 add_action( 'wp_enqueue_scripts', 'rife_free_child_scripts' );  
+
+
+/**
+ * Adds popup button to be used with Brave Popups plugin
+ */
+function rife_free_child_add_brave_contact_popup() {
+	if ( is_plugin_active( 'brave-popup-builder/index.php' ) ) {
+		echo '<div id="brave-contact-form"><img alt="Formulário de Contato" src="' . get_stylesheet_directory_uri() . '/assets/images/email_chat.png"></div>';
+	}
+}
+add_action( 'wp_body_open', 'rife_free_child_add_brave_contact_popup' );
